@@ -1,0 +1,153 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<title>S - Board</title>
+<link rel="stylesheet" type="text/css" href="style.css"/>
+<script type="text/javascript">
+function notifyAttend() {
+    var popup = document.getElementById("sAttend");
+    popup.classList.toggle("show");
+}
+</script>
+</head>
+<body>
+
+<!-- Navigation -->
+
+<!-- Heading -->
+<div id="content">
+	<div id="heading">
+		<span class="flagbg"> </span>
+			<h1>CSC1024: Computer Architecture</h1>
+				<div id="nav">
+					<ul>
+						<li><a href="home.html">Home</a></li>
+						<li><a href="about.html">About</a></li>
+						<li class="hdrop"><a href="courses.html">Courses</a>
+							<ul id="drop" style="list-style-type:circle">
+							<li><a href="csc1021.html">CSC1021</a></li>
+							<li><a href="csc1022.html">CSC1022</a></li>
+							<li><a href="csc1023.html">CSC1023</a></li>
+							<li><a href="csc1024.html">CSC1024</a></li>
+							<li><a href="csc1025.html">CSC1025</a></li>
+							<li><a href="csc1026.html">CSC1026</a></li>
+							</ul>
+						</li>
+	
+					</ul>
+				</div>
+	</div>
+	<hr />
+
+<!-- Section 1 -->
+
+	<div id="sectblock1">
+		<h2 id="sect1">Deadlines</h2>
+
+		<p>
+		<strong>Module Attendance:</strong>
+		</p>
+		<div class="container">
+			<div class="attendance comparc">75%
+					<div class="popup" onclick="notifyAttend()">Click for attendence information
+			<span class="popuptext" id="sAttend">Attendance is great!</span>
+		</div>
+			</div>
+		</div>
+		
+		<p>
+		<strong>Coursework due:</strong>
+		</p>
+		
+		<p>
+		CSC1024 Semester 2 Coursework - The Lift due at 16:00:00 Friday, 12th May 2017S
+		</p>
+		<script type="text/javascript">
+		alert("Deadline(s) due 16:00 Friday, 12th May");
+		</script>
+		
+		<div class="closedeadline">
+		<p><strong>Coursework Due!</strong> Coursework is due for 16:00 Friday, 12th May</p>
+		</div>
+		
+	</div>
+	<hr />
+
+<!-- Section 2 -->
+
+	<div id="sectblock2">
+		<h2 id="sect2">Overview</h2>
+		
+		<fieldset>
+		<legend>Full Module Time Tabe: </legend>
+			<iframe id="time" src="timetable/1024time.html"></iframe>
+		</fieldset>
+		
+		<fieldset>
+		<legend>Module Information: </legend>
+			<p>
+			Outlines credit value, semester taught, what you will be expected to know and what you will be able to do 
+			to complete a module.
+			</p>
+			<ul>
+				<li>Semester 1: 10 Credits</li>
+				<li>Semester 2: 10 Credits</li>
+			</ul>
+			<p>
+			<b>Intended knowledge Outcomes:</b>
+			To be able to: - describe the basic computing system concepts necessary to design, install and maintain 
+			realistic systems - describe the architecture of a modern, digital computer and its components
+			</p>
+			<p>
+			<b>Intended skill Outcomes:</b>
+			To be able to: - sketch the internal organisation of a microprocessor - apply critical analysis of 
+			computing technologies and hardware components - write simple programs in assembly language
+			</p>
+		</fieldset>
+	</div>
+	<hr />
+
+<!-- Section 3 -->
+
+<div id="sectblock3">
+		<h2 id="sect3">Contact</h2>
+
+		<form method="post" action="sentm.html">
+		<fieldset>
+		<legend>Enter your name: </legend>
+			<input type="text" name="fname" maxlength="12" placeholder="First name"/>
+			<input type="text" name="sname" maxlength="12" placeholder="Surname"/>
+		</fieldset>
+		<fieldset>
+		<legend>Enter your email address: </legend>
+			<input type="text" name="email" maxlength="24" placeholder="Enter your email here"/>
+		</fieldset>
+		<fieldset>
+		<legend>Subject: </legend>
+			<select name="subject">
+			<option value="cquestions">Course Questions</option>
+			<option value="attendance">Attendance</option>
+			<option value="coursework">Coursework</option>
+			<option value="Other">Other</option>
+			</select>
+		</fieldset>
+		<fieldset>
+		<legend>Enter your message: </legend>
+			<textarea name="message" rows="8" cols="20" placeholder="Enter your message here"></textarea>
+		</fieldset>
+		<p>
+		<input type="submit" value="Send Message"/>
+		</p>
+		</form>
+	
+	</div>
+	<hr />
+
+<!-- Information Reference -->
+
+	<div id="refinfo">
+		<p>S - Board was programmed and designed by <a href="https://www.linkedin.com/in/harry-baldwin-113301142/">Harry Baldwin </a></p>
+	</div>
+</div>
+</body>
+</html>
